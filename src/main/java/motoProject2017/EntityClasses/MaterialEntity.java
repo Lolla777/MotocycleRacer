@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by Ksenia on 13.01.2017.
  */
 @Entity
-@Table(name = "idmaterial")
+@Table(name = "tmaterial")
 public class MaterialEntity {
 
     @Id
