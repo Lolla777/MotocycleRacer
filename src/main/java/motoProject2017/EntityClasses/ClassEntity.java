@@ -3,7 +3,7 @@ package motoProject2017.EntityClasses;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.ArrayList;
+
 
 /**
  * Created by Ksenia on 11.01.2017.
@@ -52,3 +52,7 @@ public class ClassEntity implements Serializable {
 
     }
 }
+
+
+
+
