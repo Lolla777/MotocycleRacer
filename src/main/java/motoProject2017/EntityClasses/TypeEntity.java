@@ -19,13 +19,13 @@ public class TypeEntity implements Serializable {
     public Long getIdType(){return  IdType;}
     public void setIdType(Long IdType){this.IdType = IdType;}
 
-//    @NotNull
-//    @ManyToOne
-//    @Column(name = "class", length = 100, nullable = false, unique = true )
-//    private ClassEntity Class;
+    @NotNull
+    @ManyToOne()
+    @JoinColumn(name = "class")
+    private ClassEntity Class;
 
-//    public ClassEntity getClassEntity(){return Class;}
-//    public void setClassEntity(ClassEntity Class){this.Class = Class;}
+    public ClassEntity getClassEntity(){return Class;}
+    public void setClassEntity(ClassEntity Class){this.Class = Class;}
 
     @NotNull
     @Column(name = "name", length = 100, nullable = false, unique = true)
@@ -52,13 +52,12 @@ public class TypeEntity implements Serializable {
 
     public TypeEntity(Long idtype,ClassEntity aclass,String name,String specification,String picture_url,String picture_url2){
         this.IdType = idtype;
-//        this.Class = aclass;
+        this.Class = aclass;
         this.Name = name;
         this.Specification = specification;
         this.Picture_Url = picture_url;
         this.Picture_Url2 = picture_url2;
     }
-
 
     public TypeEntity(){
 

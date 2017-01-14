@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
  * Created by Ksenia on 13.01.2017.
  */
 @Entity
-@Table(name = "tmotorycycle")
+@Table(name = "tmotorcycle")
 public class MotorcycleEntity {
 
     @Id
@@ -48,7 +48,7 @@ public class MotorcycleEntity {
     }
 
     @NotNull
-    @Column(name = "model",length = 30,unique = true)
+    @Column(name = "model")
     private String Model;
 
     public String getModel() {

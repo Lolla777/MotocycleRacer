@@ -3,6 +3,7 @@ package motoProject2017.EntityClasses;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.List;
 
 
 /**
@@ -37,11 +38,19 @@ public class ClassEntity implements Serializable {
     public String getPicture_Url(){return Picture_Url;}
     public void setPicture_Url(String Picture_url){this.Picture_Url = Picture_url;}
 
-//    @JoinTable
-//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "classentity")
-//     private ArrayList<ClassEntity> classes = new ArrayList<ClassEntity>();
 
-    public ClassEntity(Long idClass,String name,String specification, String picture_Url){
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "classentity")
+//     private List<TypeEntity> types;
+//
+//    public List<TypeEntity> getTypes() {
+//        return types;
+//    }
+//
+//    public void setTypes(List<TypeEntity> types) {
+//        this.types = types;
+//    }
+
+    public ClassEntity(Long idClass, String name, String specification, String picture_Url){
         this.IdClass = idClass;
         this.Name= name;
         this.Specification = specification;
