@@ -24,7 +24,7 @@ public class ManufacturerEntity {
     }
 
     @NotNull
-    @Column(name = "name")
+    @Column(name = "name",unique = true)
     private String Name;
 
     public String getName() {

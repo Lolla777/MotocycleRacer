@@ -37,6 +37,18 @@ public class MotorcycleEntity {
 
     @NotNull
     @Column(name = "section")
+    private String Section;
+
+    public String getSection() {
+        return Section;
+    }
+
+    public void setSection(String section) {
+        this.Section = section;
+    }
+
+    @NotNull
+    @Column(name = "model",length = 30,unique = true)
     private String Model;
 
     public String getModel() {
@@ -48,7 +60,7 @@ public class MotorcycleEntity {
     }
 
     @NotNull
-    @Column(name = "model")
+    @Column(name = "production")
     private String Production;
 
     public String getProduction() {
@@ -83,7 +95,7 @@ public class MotorcycleEntity {
     }
 
     @NotNull
-    @Column(name = "engine")
+    @Column(name = "engine",length = 50)
     private String Engine;
 
     public String getEngine() {
@@ -95,7 +107,7 @@ public class MotorcycleEntity {
     }
 
     @NotNull
-    @Column(name = "transmission")
+    @Column(name = "transmission",length = 30)
     private  String Transmission;
 
     public String getTransmission() {
@@ -105,8 +117,9 @@ public class MotorcycleEntity {
     public void setTransmission(String transmission) {
         this.Transmission = transmission;
     }
+
     @NotNull
-    @Column(name = "brekes_front")
+    @Column(name = "brekes_front",length = 50)
     private  String Brekes_front;
 
     public String getBrekes_front() {
@@ -116,8 +129,9 @@ public class MotorcycleEntity {
     public void setBrekes_front(String brekes_front) {
         this.Brekes_front = brekes_front;
     }
+
     @NotNull
-    @Column(name = "brekes_rear")
+    @Column(name = "brekes_rear",length = 50)
     private String Brekes_rear;
 
     public String getBrekes_rear() {
@@ -129,7 +143,7 @@ public class MotorcycleEntity {
     }
 
     @NotNull
-    @Column(name = "tires_front")
+    @Column(name = "tires_front",length = 10)
     private String Tires_front;
 
     public String getTires_front() {
@@ -140,7 +154,7 @@ public class MotorcycleEntity {
         this.Tires_front = tires_front;
     }
     @NotNull
-    @Column(name = "tires_rear")
+    @Column(name = "tires_rear",length = 10)
     private String Tires_rear;
 
     public String getTires_rear() {

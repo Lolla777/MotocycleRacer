@@ -16,7 +16,6 @@ import java.util.List;
 @RequestMapping("/class")
 public class ClassController {
 
-
     @Autowired
     private ClassService classService;
 

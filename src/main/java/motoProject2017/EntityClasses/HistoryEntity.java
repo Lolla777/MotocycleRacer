@@ -36,7 +36,7 @@ public class HistoryEntity {
     }
 
     @NotNull
-    @Column(name = "title")
+    @Column(name = "title",length = 100,unique = true)
     private String Title;
 
     public String getTitle() {

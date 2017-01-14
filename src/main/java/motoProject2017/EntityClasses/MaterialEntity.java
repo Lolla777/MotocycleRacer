@@ -37,7 +37,7 @@ public class MaterialEntity {
     }
 
     @NotNull
-    @Column(name = "name")
+    @Column(name = "name",length = 100)
     private String Name;
 
     public String getName() {
