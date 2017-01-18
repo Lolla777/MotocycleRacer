@@ -26,13 +26,13 @@ public class MaterialEntity {
 
     @NotNull
     @Column(name = "section")
-    private String Section;
+    private Long Section;
 
-    public String getSection() {
+    public Long getSection() {
         return Section;
     }
 
-    public void setSection(String section) {
+    public void setSection(Long section) {
         this.Section = section;
     }
 
@@ -99,7 +99,7 @@ public class MaterialEntity {
     public MaterialEntity() {
     }
 
-    public MaterialEntity(Long idMaterial,String section, String name, Date addData, String content, Long user, String picture_url) {
+    public MaterialEntity(Long idMaterial,Long section, String name, Date addData, String content, Long user, String picture_url) {
         this.IdMaterial= idMaterial;
         this.Section = section;
         this.Name = name;
