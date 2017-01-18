@@ -26,8 +26,8 @@ public class TypeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TypeEntity> getById(@PathVariable Long id){
-        TypeEntity typeEntity = typeService.finfById(id);
+    public ResponseEntity<TypeEntity> getById (@PathVariable Long id){
+        TypeEntity typeEntity = typeService.findById(id);
         return new ResponseEntity<TypeEntity>(typeEntity,HttpStatus.OK);
     }
 }

@@ -9,5 +9,5 @@ import java.util.List;
  */
 public interface TypeService {
     List<TypeEntity> findAll();
-    TypeEntity finfById(Long id);
+    TypeEntity findById(Long id);
 }

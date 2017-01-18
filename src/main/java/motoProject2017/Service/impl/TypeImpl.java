@@ -25,7 +25,7 @@ public class TypeImpl implements TypeService {
     }
 
     @Override
-    public TypeEntity finfById(Long id) {
+    public TypeEntity findById(Long id) {
         return Type.findOne(id);
     }
 }
