@@ -22,7 +22,7 @@ public class MaterialController {
     @Autowired
     private MaterialService materialService;
 
-    @GetMapping("/all")
+    @GetMapping("/all.json")
     public ResponseEntity<List<MaterialEntity>> getAll(){
         List<MaterialEntity> materialEntities = materialService.findAll();
         return new ResponseEntity<List<MaterialEntity>>(materialEntities, HttpStatus.OK);
